@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometria Espacial - conceitos, fórmulas, exemplos, calculadoras e atividades interativas.">
+    <title>Geometria Espacial | Guia Interativo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">◇</span>
+            Geo<span>3D</span>
+        </a>
+
+        <nav class="menu">
+            <a href="#conceitos">Conceitos</a>
+            <a href="#solidos">Sólidos</a>
+            <a href="#formulas">Fórmulas</a>
+            <a href="#calculadoras">Calculadoras</a>
+            <a href="#atividades">Atividades</a>
+        </nav>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="container hero-grid">
+
+            <div class="hero-content">
+                <div class="badge">📐 MATEMÁTICA • GEOMETRIA 3D</div>
+
+                <h1>
+                    Explore o mundo da
+                    <span>Geometria Espacial</span>
+                </h1>
+
+                <p>
+                    Aprenda a calcular áreas, volumes, diagonais e outras
+                    propriedades dos principais sólidos geométricos através
+                    de explicações simples, exemplos e atividades interativas.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#conceitos" class="btn primary">Começar a estudar →</a>
+                    <a href="#calculadoras" class="btn secondary">Abrir calculadoras</a>
+                </div>
+
+                <div class="stats">
+                    <div>
+                        <strong>12+</strong>
+                        <span>Fórmulas</span>
+                    </div>
+                    <div>
+                        <strong>6</strong>
+                        <span>Sólidos</span>
+                    </div>
+                    <div>
+                        <strong>15+</strong>
+                        <span>Atividades</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="cube-scene">
+                    <div class="cube">
+                        <div class="face front">A</div>
+                        <div class="face back">B</div>
+                        <div class="face right"></div>
+                        <div class="face left"></div>
+                        <div class="face top"></div>
+                        <div class="face bottom"></div>
+                    </div>
+                </div>
+
+                <div class="floating-card card-1">
+                    <span>VOLUME</span>
+                    <strong>V = a³</strong>
+                </div>
+
+                <div class="floating-card card-2">
+                    <span>ÁREA</span>
+                    <strong>A = 6a²</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTRODUÇÃO -->
+    <section class="section" id="conceitos">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">01 • FUNDAMENTOS</span>
+                <h2>O que é Geometria Espacial?</h2>
+                <p>
+                    A geometria espacial é a área da matemática responsável
+                    pelo estudo das figuras que possuem três dimensões:
+                    comprimento, largura e altura.
+                </p>
+            </div>
+
+            <div class="concept-grid">
+
+                <article class="concept-card">
+                    <div class="icon purple">▣</div>
+                    <h3>Comprimento</h3>
+                    <p>
+                        Representa uma dimensão de um objeto, como o tamanho
+                        de uma caixa de uma extremidade até outra.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <div class="icon blue">▤</div>
+                    <h3>Largura</h3>
+                    <p>
+                        É a segunda dimensão e, junto ao comprimento,
+                        permite determinar áreas de superfícies.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <div class="icon green">◇</div>
+                    <h3>Altura</h3>
+                    <p>
+                        É a dimensão perpendicular à base. Ela aparece
+                        frequentemente nos cálculos de volume.
+                    </p>
+                </article>
+
+                <article class="concept-card">
+                    <div class="icon orange">∠</div>
+                    <h3>Dimensão</h3>
+                    <p>
+                        Objetos tridimensionais ocupam uma região do espaço
+                        e possuem volume.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="explanation">
+                <div class="explanation-number">01</div>
+                <div>
+                    <h3>Do 2D para o 3D</h3>
+                    <p>
+                        Na geometria plana estudamos figuras como quadrados,
+                        triângulos e círculos. Elas possuem apenas duas
+                        dimensões. Na geometria espacial, essas figuras podem
+                        formar bases de sólidos tridimensionais.
+                    </p>
+                    <p>
+                        Por exemplo, um quadrado pode ser a base de um
+                        <strong>prisma quadrangular</strong>, enquanto um
+                        círculo pode ser a base de um <strong>cilindro</strong>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SÓLIDOS -->
+    <section class="section dark-section" id="solidos">
+        <div class="container">
+
+            <div class="section-heading light">
+                <span class="section-tag">02 • SÓLIDOS</span>
+                <h2>Principais sólidos geométricos</h2>
+                <p>
+                    Conheça as características, fórmulas e aplicações dos
+                    sólidos mais importantes.
+                </p>
+            </div>
+
+            <div class="solid-grid">
+
+                <article class="solid-card">
+                    <div class="solid-visual cube-mini">⬡</div>
+                    <div class="solid-content">
+                        <span class="solid-type">POLIEDRO</span>
+                        <h3>Cubo</h3>
+                        <p>
+                            Possui 6 faces quadradas congruentes, 12 arestas
+                            e 8 vértices.
+                        </p>
+
+                        <div class="formula">
+                            <span>Área total</span>
+                            <strong>At = 6a²</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = a³</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Diagonal</span>
+                            <strong>d = a√3</strong>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="solid-card">
+                    <div class="solid-visual prism-mini">▣</div>
+                    <div class="solid-content">
+                        <span class="solid-type">POLIEDRO</span>
+                        <h3>Paralelepípedo</h3>
+                        <p>
+                            Sólido formado por seis faces que são
+                            paralelogramos.
+                        </p>
+
+                        <div class="formula">
+                            <span>Área total</span>
+                            <strong>At = 2(ab + ac + bc)</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = abc</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Diagonal</span>
+                            <strong>d = √(a²+b²+c²)</strong>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="solid-card">
+                    <div class="solid-visual cylinder-mini">◯</div>
+                    <div class="solid-content">
+                        <span class="solid-type">CORPO REDONDO</span>
+                        <h3>Cilindro</h3>
+                        <p>
+                            Possui duas bases circulares paralelas e uma
+                            superfície lateral curva.
+                        </p>
+
+                        <div class="formula">
+                            <span>Área da base</span>
+                            <strong>Ab = πr²</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Área total</span>
+                            <strong>At = 2πr(r+h)</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = πr²h</strong>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="solid-card">
+                    <div class="solid-visual cone-mini">△</div>
+                    <div class="solid-content">
+                        <span class="solid-type">CORPO REDONDO</span>
+                        <h3>Cone</h3>
+                        <p>
+                            Possui uma base circular e um único vértice
+                            localizado fora do plano da base.
+                        </p>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = πr²h / 3</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Geratriz</span>
+                            <strong>g = √(r²+h²)</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Área lateral</span>
+                            <strong>Al = πrg</strong>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="solid-card">
+                    <div class="solid-visual sphere-mini">●</div>
+                    <div class="solid-content">
+                        <span class="solid-type">CORPO REDONDO</span>
+                        <h3>Esfera</h3>
+                        <p>
+                            Sólido em que todos os pontos da superfície estão
+                            à mesma distância do centro.
+                        </p>
+
+                        <div class="formula">
+                            <span>Área</span>
+                            <strong>A = 4πr²</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = 4πr³ / 3</strong>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="solid-card">
+                    <div class="solid-visual pyramid-mini">◇</div>
+                    <div class="solid-content">
+                        <span class="solid-type">POLIEDRO</span>
+                        <h3>Pirâmide</h3>
+                        <p>
+                            Possui uma base poligonal e faces laterais
+                            triangulares que se encontram em um vértice.
+                        </p>
+
+                        <div class="formula">
+                            <span>Volume</span>
+                            <strong>V = Ab · h / 3</strong>
+                        </div>
+
+                        <div class="formula">
+                            <span>Área total</span>
+                            <strong>At = Ab + Al</strong>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FÓRMULAS -->
+    <section class="section" id="formulas">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">03 • FÓRMULAS</span>
+                <h2>Fórmulas essenciais</h2>
+                <p>
+                    Use esta seção como um resumo rápido para revisar
+                    os principais cálculos.
+                </p>
+            </div>
+
+            <div class="formula-table">
+
+                <div class="table-header">
+                    <span>Sólido</span>
+                    <span>Área</span>
+                    <span>Volume</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>🧊 Cubo</strong>
+                    <span>6a²</span>
+                    <span>a³</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>📦 Paralelepípedo</strong>
+                    <span>2(ab + ac + bc)</span>
+                    <span>abc</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>🥫 Cilindro</strong>
+                    <span>2πr(r+h)</span>
+                    <span>πr²h</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>🔺 Cone</strong>
+                    <span>πr(r+g)</span>
+                    <span>πr²h/3</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>⚪ Esfera</strong>
+                    <span>4πr²</span>
+                    <span>4πr³/3</span>
+                </div>
+
+                <div class="table-row">
+                    <strong>🔻 Pirâmide</strong>
+                    <span>Ab + Al</span>
+                    <span>Abh/3</span>
+                </div>
+
+            </div>
+
+
+            <div class="important-box">
+                <div class="important-icon">💡</div>
+                <div>
+                    <h3>Área × Volume</h3>
+                    <p>
+                        Não confunda essas duas grandezas! A
+                        <strong>área</strong> mede uma superfície e é expressa
+                        em unidades quadradas, como cm² ou m².
+                    </p>
+                    <p>
+                        O <strong>volume</strong> mede o espaço ocupado pelo
+                        sólido e é expresso em unidades cúbicas, como cm³ ou m³.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="example-box">
+                <div class="example-title">
+                    <span>EXEMPLO RESOLVIDO</span>
+                    <h3>Volume de um cilindro</h3>
+                </div>
+
+                <div class="example-problem">
+                    Um cilindro possui raio de 3 cm e altura de 10 cm.
+                    Qual é o seu volume?
+                </div>
+
+                <div class="calculation">
+                    <div>Fórmula:</div>
+                    <strong>V = πr²h</strong>
+
+                    <div>Substituindo:</div>
+                    <strong>V = π · 3² · 10</strong>
+
+                    <div>Calculando:</div>
+                    <strong>V = 90π cm³</strong>
+
+                    <div>Aproximadamente:</div>
+                    <strong>V ≈ 282,74 cm³</strong>
+                </div>
+
+                <div class="answer">
+                    ✓ Resposta: aproximadamente <strong>282,74 cm³</strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PIRÂMIDE DE EULER -->
+    <section class="section gradient-section">
+        <div class="container">
+
+            <div class="euler-grid">
+                <div>
+                    <span class="section-tag">CURIOSIDADE</span>
+                    <h2>Relação de Euler</h2>
+
+                    <p>
+                        Para muitos poliedros convexos, existe uma relação
+                        matemática entre o número de vértices, arestas e faces.
+                    </p>
+
+                    <div class="euler-formula">
+                        <span>Vértices</span>
+                        <strong>V - A + F = 2</strong>
+                        <span>Faces</span>
+                    </div>
+                </div>
+
+                <div class="euler-example">
+                    <h3>Exemplo: Cubo</h3>
+
+                    <div class="euler-line">
+                        <span>Vértices</span>
+                        <strong>8</strong>
+                    </div>
+
+                    <div class="euler-line">
+                        <span>Arestas</span>
+                        <strong>12</strong>
+                    </div>
+
+                    <div class="euler-line">
+                        <span>Faces</span>
+                        <strong>6</strong>
+                    </div>
+
+                    <div class="euler-result">
+                        8 − 12 + 6 = <strong>2 ✓</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CALCULADORAS -->
+    <section class="section" id="calculadoras">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">04 • PRÁTICA</span>
+                <h2>Calculadoras de Geometria</h2>
+                <p>
+                    Insira os valores e deixe o site realizar os cálculos.
+                </p>
+            </div>
+
+            <div class="calculator-grid">
+
+                <!-- CUBO -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🧊</div>
+                    <h3>Cubo</h3>
+                    <p>Descubra área total e volume.</p>
+
+                    <label for="ladoCubo">Lado (a)</label>
+                    <input type="number" id="ladoCubo" placeholder="Ex.: 5">
+
+                    <button class="calc-btn" onclick="calcularCubo()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoCubo">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+
+                <!-- PARALELEPÍPEDO -->
+                <div class="calculator-card">
+                    <div class="calc-icon">📦</div>
+                    <h3>Paralelepípedo</h3>
+                    <p>Calcule o volume e a área total.</p>
+
+                    <label for="comp">Comprimento</label>
+                    <input type="number" id="comp" placeholder="Ex.: 8">
+
+                    <label for="larg">Largura</label>
+                    <input type="number" id="larg" placeholder="Ex.: 4">
+
+                    <label for="alt">Altura</label>
+                    <input type="number" id="alt" placeholder="Ex.: 3">
+
+                    <button class="calc-btn" onclick="calcularParalelepipedo()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoParalelepipedo">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+
+                <!-- CILINDRO -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🥫</div>
+                    <h3>Cilindro</h3>
+                    <p>Calcule usando π ≈ 3,14159.</p>
+
+                    <label for="raioCilindro">Raio</label>
+                    <input type="number" id="raioCilindro" placeholder="Ex.: 3">
+
+                    <label for="alturaCilindro">Altura</label>
+                    <input type="number" id="alturaCilindro" placeholder="Ex.: 10">
+
+                    <button class="calc-btn" onclick="calcularCilindro()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoCilindro">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+
+                <!-- ESFERA -->
+                <div class="calculator-card">
+                    <div class="calc-icon">⚪</div>
+                    <h3>Esfera</h3>
+                    <p>Descubra área e volume.</p>
+
+                    <label for="raioEsfera">Raio</label>
+                    <input type="number" id="raioEsfera" placeholder="Ex.: 5">
+
+                    <button class="calc-btn" onclick="calcularEsfera()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoEsfera">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+
+                <!-- CONE -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🔺</div>
+                    <h3>Cone</h3>
+                    <p>Calcule o volume e a geratriz.</p>
+
+                    <label for="raioCone">Raio</label>
+                    <input type="number" id="raioCone" placeholder="Ex.: 4">
+
+                    <label for="alturaCone">Altura</label>
+                    <input type="number" id="alturaCone" placeholder="Ex.: 6">
+
+                    <button class="calc-btn" onclick="calcularCone()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoCone">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+
+                <!-- PIRÂMIDE -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🔻</div>
+                    <h3>Pirâmide</h3>
+                    <p>Calcule o volume a partir da base.</p>
+
+                    <label for="areaBase">Área da base</label>
+                    <input type="number" id="areaBase" placeholder="Ex.: 25">
+
+                    <label for="alturaPiramide">Altura</label>
+                    <input type="number" id="alturaPiramide" placeholder="Ex.: 12">
+
+                    <button class="calc-btn" onclick="calcularPiramide()">
+                        Calcular
+                    </button>
+
+                    <div class="calc-result" id="resultadoPiramide">
+                        Resultado aparecerá aqui.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ATIVIDADES -->
+    <section class="section dark-section" id="atividades">
+        <div class="container">
+
+            <div class="section-heading light">
+                <span class="section-tag">05 • DESAFIOS</span>
+                <h2>Atividades para praticar</h2>
+                <p>
+                    Resolva os exercícios antes de conferir as respostas.
+                </p>
+            </div>
+
+            <div class="activities">
+
+                <article class="activity">
+                    <div class="activity-number">01</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty easy">FÁCIL</span>
+                        <h3>Volume de um cubo</h3>
+
+                        <p>
+                            Um cubo possui aresta de 6 cm.
+                            Qual é o seu volume?
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 36 cm³</button>
+                            <button onclick="responder(this, false)">B) 72 cm³</button>
+                            <button onclick="responder(this, true)">C) 216 cm³</button>
+                            <button onclick="responder(this, false)">D) 256 cm³</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+
+                <article class="activity">
+                    <div class="activity-number">02</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty easy">FÁCIL</span>
+                        <h3>Volume do paralelepípedo</h3>
+
+                        <p>
+                            Uma caixa possui 10 cm de comprimento,
+                            5 cm de largura e 4 cm de altura.
+                            Qual é seu volume?
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 100 cm³</button>
+                            <button onclick="responder(this, true)">B) 200 cm³</button>
+                            <button onclick="responder(this, false)">C) 250 cm³</button>
+                            <button onclick="responder(this, false)">D) 400 cm³</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+
+                <article class="activity">
+                    <div class="activity-number">03</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty medium">MÉDIO</span>
+                        <h3>Área da esfera</h3>
+
+                        <p>
+                            Uma esfera possui raio igual a 5 cm.
+                            Considerando π ≈ 3,14, qual é sua área?
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 157 cm²</button>
+                            <button onclick="responder(this, true)">B) 314 cm²</button>
+                            <button onclick="responder(this, false)">C) 628 cm²</button>
+                            <button onclick="responder(this, false)">D) 78,5 cm²</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+
+                <article class="activity">
+                    <div class="activity-number">04</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty medium">MÉDIO</span>
+                        <h3>Volume de uma pirâmide</h3>
+
+                        <p>
+                            Uma pirâmide possui área da base igual a
+                            60 cm² e altura de 9 cm. Determine o volume.
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 120 cm³</button>
+                            <button onclick="responder(this, false)">B) 150 cm³</button>
+                            <button onclick="responder(this, true)">C) 180 cm³</button>
+                            <button onclick="responder(this, false)">D) 540 cm³</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+
+                <article class="activity">
+                    <div class="activity-number">05</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty hard">DESAFIO</span>
+                        <h3>Diagonal do cubo</h3>
+
+                        <p>
+                            A diagonal de um cubo é 12√3 cm.
+                            Qual é a medida de sua aresta?
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 3 cm</button>
+                            <button onclick="responder(this, true)">B) 12 cm</button>
+                            <button onclick="responder(this, false)">C) 24 cm</button>
+                            <button onclick="responder(this, false)">D) 36 cm</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+
+                <article class="activity">
+                    <div class="activity-number">06</div>
+
+                    <div class="activity-content">
+                        <span class="difficulty hard">DESAFIO</span>
+                        <h3>Questão de aplicação</h3>
+
+                        <p>
+                            Um reservatório cilíndrico possui raio de 2 m
+                            e altura de 5 m. Qual é sua capacidade aproximada
+                            em litros? Considere π ≈ 3,14.
+                        </p>
+
+                        <div class="options">
+                            <button onclick="responder(this, false)">A) 6.280 L</button>
+                            <button onclick="responder(this, true)">B) 62.800 L</button>
+                            <button onclick="responder(this, false)">C) 31.400 L</button>
+                            <button onclick="responder(this, false)">D) 628 L</button>
+                        </div>
+
+                        <div class="activity-feedback"></div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ATIVIDADES PRÁTICAS -->
+    <section class="section" id="projetos">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-tag">06 • MÃO NA MASSA</span>
+                <h2>Atividades práticas</h2>
+                <p>
+                    A geometria espacial fica mais fácil quando conseguimos
+                    enxergá-la no mundo real.
+                </p>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <span class="project-number">01</span>
+                    <h3>Caça aos sólidos</h3>
+                    <p>
+                        Encontre 10 objetos em sua casa ou escola que tenham
+                        formato semelhante a sólidos geométricos.
+                    </p>
+
+                    <ul>
+                        <li>Identifique o sólido.</li>
+                        <li>Meça suas dimensões.</li>
+                        <li>Calcule seu volume.</li>
+                        <li>Registre os resultados.</li>
+                    </ul>
+                </article>
+
+
+                <article class="project-card">
+                    <span class="project-number">02</span>
+                    <h3>Construa um cubo</h3>
+                    <p>
+                        Utilize papel, cartolina ou material reciclável para
+                        construir um cubo.
+                    </p>
+
+                    <ul>
+                        <li>Desenhe a planificação.</li>
+                        <li>Recorte as faces.</li>
+                        <li>Monte o sólido.</li>
+                        <li>Calcule área e volume.</li>
+                    </ul>
+                </article>
+
+
+                <article class="project-card">
+                    <span class="project-number">03</span>
+                    <h3>Desafio do reservatório</h3>
+                    <p>
+                        Escolha uma garrafa ou recipiente cilíndrico e estime
+                        sua capacidade utilizando cálculos geométricos.
+                    </p>
+
+                    <ul>
+                        <li>Meça o raio.</li>
+                        <li>Meça a altura.</li>
+                        <li>Calcule o volume.</li>
+                        <li>Compare com a capacidade real.</li>
+                    </ul>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CHECKLIST -->
+    <section class="section checklist-section">
+        <div class="container">
+
+            <div class="checklist-card">
+
+                <div>
+                    <span class="section-tag">REVISÃO</span>
+                    <h2>Você já domina estes conceitos?</h2>
+                    <p>
+                        Marque os assuntos que você já consegue explicar
+                        sem consultar o material.
+                    </p>
+                </div>
+
+                <div class="checklist">
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Sei diferenciar área e volume.</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Sei calcular o volume de um cubo.</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Sei calcular o volume de um cilindro.</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Conheço a fórmula da esfera.</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Consigo aplicar a relação de Euler.</span>
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        <span>Consigo resolver problemas com unidades.</span>
+                    </label>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">◇</span>
+                Geo<span>3D</span>
+            </a>
+            <p>
+                Um guia interativo para aprender geometria espacial
+                de maneira visual, prática e divertida.
+            </p>
+        </div>
+
+        <div>
+            <h4>Conteúdo</h4>
+            <a href="#conceitos">Conceitos</a>
+            <a href="#solidos">Sólidos</a>
+            <a href="#formulas">Fórmulas</a>
+            <a href="#calculadoras">Calculadoras</a>
+        </div>
+
+        <div>
+            <h4>Prática</h4>
+            <a href="#atividades">Exercícios</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#inicio">Revisão</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Geo3D • Geometria Espacial
+    </div>
+</footer>
+
+
+<script>
+
+    // -----------------------------
+    // CALCULADORA DO CUBO
+    // -----------------------------
+
+    function calcularCubo() {
+
+        const lado = Number(document.getElementById("ladoCubo").value);
+        const resultado = document.getElementById("resultadoCubo");
+
+        if (lado <= 0) {
+            resultado.innerHTML = "⚠️ Digite um valor válido.";
+            return;
+        }
+
+        const area = 6 * lado ** 2;
+        const volume = lado ** 3;
+        const diagonal = lado * Math.sqrt(3);
+
+        resultado.innerHTML = `
+            <strong>Resultados:</strong>
+            <br>
+            Área total: <b>${area.toFixed(2)} u²</b>
+            <br>
+            Volume: <b>${volume.toFixed(2)} u³</b>
+            <br>
+            Diagonal: <b>${diagonal.toFixed(2)} u</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // PARALELEPÍPEDO
+    // -----------------------------
+
+    function calcularParalelepipedo() {
+
+        const a = Number(document.getElementById("comp").value);
+        const b = Number(document.getElementById("larg").value);
+        const c = Number(document.getElementById("alt").value);
+
+        const resultado =
+            document.getElementById("resultadoParalelepipedo");
+
+        if (a <= 0 || b <= 0 || c <= 0) {
+            resultado.innerHTML = "⚠️ Preencha todos os valores.";
+            return;
+        }
+
+        const volume = a * b * c;
+        const area = 2 * (a * b + a * c + b * c);
+        const diagonal = Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+
+        resultado.innerHTML = `
+            <strong>Resultados:</strong>
+            <br>
+            Área total: <b>${area.toFixed(2)} u²</b>
+            <br>
+            Volume: <b>${volume.toFixed(2)} u³</b>
+            <br>
+            Diagonal: <b>${diagonal.toFixed(2)} u</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // CILINDRO
+    // -----------------------------
+
+    function calcularCilindro() {
+
+        const r = Number(document.getElementById("raioCilindro").value);
+        const h = Number(document.getElementById("alturaCilindro").value);
+
+        const resultado =
+            document.getElementById("resultadoCilindro");
+
+        if (r <= 0 || h <= 0) {
+            resultado.innerHTML = "⚠️ Digite valores positivos.";
+            return;
+        }
+
+        const areaBase = Math.PI * r ** 2;
+        const areaLateral = 2 * Math.PI * r * h;
+        const areaTotal = 2 * Math.PI * r * (r + h);
+        const volume = Math.PI * r ** 2 * h;
+
+        resultado.innerHTML = `
+            <strong>Resultados:</strong>
+            <br>
+            Área da base: <b>${areaBase.toFixed(2)} u²</b>
+            <br>
+            Área lateral: <b>${areaLateral.toFixed(2)} u²</b>
+            <br>
+            Área total: <b>${areaTotal.toFixed(2)} u²</b>
+            <br>
+            Volume: <b>${volume.toFixed(2)} u³</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // ESFERA
+    // -----------------------------
+
+    function calcularEsfera() {
+
+        const r = Number(document.getElementById("raioEsfera").value);
+
+        const resultado =
+            document.getElementById("resultadoEsfera");
+
+        if (r <= 0) {
+            resultado.innerHTML = "⚠️ Digite um raio válido.";
+            return;
+        }
+
+        const area = 4 * Math.PI * r ** 2;
+        const volume = (4 / 3) * Math.PI * r ** 3;
+
+        resultado.innerHTML = `
+            <strong>Resultados:</strong>
+            <br>
+            Área: <b>${area.toFixed(2)} u²</b>
+            <br>
+            Volume: <b>${volume.toFixed(2)} u³</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // CONE
+    // -----------------------------
+
+    function calcularCone() {
+
+        const r = Number(document.getElementById("raioCone").value);
+        const h = Number(document.getElementById("alturaCone").value);
+
+        const resultado =
+            document.getElementById("resultadoCone");
+
+        if (r <= 0 || h <= 0) {
+            resultado.innerHTML = "⚠️ Digite valores positivos.";
+            return;
+        }
+
+        const geratriz = Math.sqrt(r ** 2 + h ** 2);
+        const areaBase = Math.PI * r ** 2;
+        const areaLateral = Math.PI * r * geratriz;
+        const areaTotal = areaBase + areaLateral;
+        const volume = (Math.PI * r ** 2 * h) / 3;
+
+        resultado.innerHTML = `
+            <strong>Resultados:</strong>
+            <br>
+            Geratriz: <b>${geratriz.toFixed(2)} u</b>
+            <br>
+            Área total: <b>${areaTotal.toFixed(2)} u²</b>
+            <br>
+            Volume: <b>${volume.toFixed(2)} u³</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // PIRÂMIDE
+    // -----------------------------
+
+    function calcularPiramide() {
+
+        const areaBase = Number(document.getElementById("areaBase").value);
+        const h = Number(document.getElementById("alturaPiramide").value);
+
+        const resultado =
+            document.getElementById("resultadoPiramide");
+
+        if (areaBase <= 0 || h <= 0) {
+            resultado.innerHTML = "⚠️ Digite valores positivos.";
+            return;
+        }
+
+        const volume = (areaBase * h) / 3;
+
+        resultado.innerHTML = `
+            <strong>Resultado:</strong>
+            <br>
+            V = Ab × h ÷ 3
+            <br><br>
+            V = ${areaBase} × ${h} ÷ 3
+            <br>
+            <b>Volume = ${volume.toFixed(2)} u³</b>
+        `;
+    }
+
+
+    // -----------------------------
+    // QUESTÕES
+    // -----------------------------
+
+    function responder(botao, correto) {
+
+        const atividade =
+            botao.closest(".activity");
+
+        const botoes =
+            atividade.querySelectorAll(".options button");
+
+        const feedback =
+            atividade.querySelector(".activity-feedback");
+
+        botoes.forEach(item => {
+            item.disabled = true;
+        });
+
+        if (correto) {
+
+            botao.classList.add("correct");
+
+            feedback.innerHTML =
+                "🎉 <strong>Correto!</strong> Excelente trabalho.";
+
+            feedback.className =
+                "activity-feedback success";
+
+        } else {
+
+            botao.classList.add("wrong");
+
+            feedback.innerHTML =
+                "❌ <strong>Resposta incorreta.</strong> Revise a fórmula e tente novamente.";
+
+            feedback.className =
+                "activity-feedback error";
+        }
+    }
+
+
+    // -----------------------------
+    // MENU MOBILE
+    // -----------------------------
+
+    const menuBtn = document.getElementById("menuBtn");
+    const menu = document.querySelector(".menu");
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+
+    // Fechar menu ao clicar em um link
+
+    document.querySelectorAll(".menu a").forEach(link => {
+
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+
+    });
+
+
+    // -----------------------------
+    // ANIMAÇÃO AO ENTRAR NA TELA
+    // -----------------------------
+
+    const observer = new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.1
+        }
+    );
+
+
+    document.querySelectorAll(
+        ".concept-card, .solid-card, .calculator-card, .activity, .project-card"
+    ).forEach(element => {
+
+        element.classList.add("hidden-animation");
+        observer.observe(element);
+
+    });
+
+</script>
+
+</body>
+</html>
